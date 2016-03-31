@@ -13,6 +13,8 @@
 		D13EA1731CAD785B00B2654A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13EA1711CAD785B00B2654A /* Main.storyboard */; };
 		D13EA17E1CAD785B00B2654A /* CollectionViewCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13EA17D1CAD785B00B2654A /* CollectionViewCodeTests.swift */; };
 		D13EA1891CAD785C00B2654A /* CollectionViewCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13EA1881CAD785C00B2654A /* CollectionViewCodeUITests.swift */; };
+		D13EA1971CAD7AAE00B2654A /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13EA1961CAD7AAE00B2654A /* MyItem.swift */; };
+		D13EA1991CAD7C9C00B2654A /* MyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13EA1981CAD7C9C00B2654A /* MyItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D13EA1841CAD785B00B2654A /* CollectionViewCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13EA1881CAD785C00B2654A /* CollectionViewCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCodeUITests.swift; sourceTree = "<group>"; };
 		D13EA18A1CAD785C00B2654A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13EA1961CAD7AAE00B2654A /* MyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
+		D13EA1981CAD7C9C00B2654A /* MyItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				D13EA16B1CAD785B00B2654A /* AppDelegate.swift */,
 				D13EA16D1CAD785B00B2654A /* ViewController.swift */,
+				D13EA1961CAD7AAE00B2654A /* MyItem.swift */,
+				D13EA1981CAD7C9C00B2654A /* MyItemView.swift */,
 				D13EA16F1CAD785B00B2654A /* Assets.xcassets */,
 				D13EA1711CAD785B00B2654A /* Main.storyboard */,
 				D13EA1741CAD785B00B2654A /* Info.plist */,
@@ -253,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13EA16E1CAD785B00B2654A /* ViewController.swift in Sources */,
+				D13EA1971CAD7AAE00B2654A /* MyItem.swift in Sources */,
 				D13EA16C1CAD785B00B2654A /* AppDelegate.swift in Sources */,
+				D13EA1991CAD7C9C00B2654A /* MyItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
