@@ -22,6 +22,7 @@ class ViewController: NSViewController {
         collectionView = NSCollectionView(frame: NSZeroRect)
         collectionView.collectionViewLayout = NSCollectionViewFlowLayout()
         collectionView.dataSource = self
+        collectionView.delegate = self
         
         scrollView.documentView = collectionView
         
@@ -47,6 +48,18 @@ extension ViewController: NSCollectionViewDataSource {
     
     func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
         return collectionView.makeItemWithIdentifier("MyItem", forIndexPath: indexPath)
+    }
+    
+}
+
+extension ViewController: NSCollectionViewDelegate {
+    
+}
+
+extension ViewController: NSCollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> NSSize {
+        return NSSize(width: 60, height: 30)
     }
     
 }
