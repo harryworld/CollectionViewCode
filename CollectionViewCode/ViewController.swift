@@ -20,7 +20,9 @@ class ViewController: NSViewController {
         scrollView = NSScrollView(frame: view.frame)
         
         collectionView = NSCollectionView(frame: NSZeroRect)
-        collectionView.collectionViewLayout = NSCollectionViewFlowLayout()
+        let layout = NSCollectionViewFlowLayout()
+        layout.itemSize = NSSize(width: 60, height: 60)
+        collectionView.collectionViewLayout = layout
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -28,10 +30,10 @@ class ViewController: NSViewController {
         
         view.addSubview(scrollView)
         
-        collectionView.registerClass(MyItem.self, forItemWithIdentifier: "MyItem")
+        collectionView.register(MyItem.self, forItemWithIdentifier: .init("MyItem"))
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
@@ -42,24 +44,16 @@ class ViewController: NSViewController {
 
 extension ViewController: NSCollectionViewDataSource {
     
-    func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
     
-    func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
-        return collectionView.makeItemWithIdentifier("MyItem", forIndexPath: indexPath)
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        return collectionView.makeItem(withIdentifier: .init("MyItem"), for: indexPath)
     }
     
 }
 
 extension ViewController: NSCollectionViewDelegate {
-    
-}
-
-extension ViewController: NSCollectionViewDelegateFlowLayout {
-    
-    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> NSSize {
-        return NSSize(width: 60, height: 30)
-    }
     
 }

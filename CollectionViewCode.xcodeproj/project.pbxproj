@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97FDBB1F2102F27B005801B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D13EA1681CAD785B00B2654A /* CollectionViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13EA16B1CAD785B00B2654A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D13EA16D1CAD785B00B2654A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		D13EA15F1CAD785B00B2654A = {
 			isa = PBXGroup;
 			children = (
+				97FDBB1F2102F27B005801B1 /* README.md */,
 				D13EA16A1CAD785B00B2654A /* CollectionViewCode */,
 				D13EA17C1CAD785B00B2654A /* CollectionViewCodeTests */,
 				D13EA1871CAD785C00B2654A /* CollectionViewCodeUITests */,
@@ -399,6 +401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.CollectionViewCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -411,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.CollectionViewCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -483,6 +487,7 @@
 				D13EA18F1CAD785C00B2654A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D13EA1901CAD785C00B2654A /* Build configuration list for PBXNativeTarget "CollectionViewCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				D13EA1921CAD785C00B2654A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D13EA1931CAD785C00B2654A /* Build configuration list for PBXNativeTarget "CollectionViewCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				D13EA1951CAD785C00B2654A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
