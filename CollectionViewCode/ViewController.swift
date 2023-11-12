@@ -28,10 +28,10 @@ class ViewController: NSViewController {
         
         view.addSubview(scrollView)
         
-        collectionView.registerClass(MyItem.self, forItemWithIdentifier: "MyItem")
+        collectionView.register(MyItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: "MyItem"))
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
@@ -42,12 +42,12 @@ class ViewController: NSViewController {
 
 extension ViewController: NSCollectionViewDataSource {
     
-    func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
     
-    func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
-        return collectionView.makeItemWithIdentifier("MyItem", forIndexPath: indexPath)
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        return collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "MyItem"), for: indexPath)
     }
     
 }
